@@ -1,0 +1,401 @@
+* { 
+  background: rgba(243, 245, 252, 1);    
+  font-family:"Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  
+}
+
+.logo {
+  width: 10%; /*esto es similiar a establecer ancho fijo de 120px ya que el ancho de la pantalla es mas menos 1200px*/
+  margin-top: 0.4em;
+  margin-left: 0.5em;
+  margin-bottom: 0;
+  background: rgba(243, 245, 252, 1);    
+}
+
+main {
+  display: flex;
+  margin-left: 10%;
+}
+
+#text-area {
+  border: none;
+  font-size: 32px;
+  margin-top: 0.5em;  
+  size:32px;
+  color: rgba(10, 56, 113,1); 
+  
+}
+
+::placeholder { color: rgba(10, 56, 113,1); }
+  #text-area:focus {
+    outline: none;
+}
+
+.encriptado {
+  background-color: white;  
+  border: none;
+  border-radius: 24px;
+  color:#0A3871;
+  height: 576px;
+  margin-left: 98px;
+  margin-top: 0;
+  text-align: center;  
+}
+
+.text-area2{
+  background-color: white;
+  background-image: url(img/Muñeco.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border:none;  
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+::placeholder { color: rgba(10, 56, 113,1); }
+  .encriptado textarea:focus {
+    outline: none;
+}
+
+ .encriptado p{
+  margin-top: 0%;
+  background-color: white;
+  text-align: center;
+  color: rgba(52, 58, 64, 1); 
+  font-size: 24px;
+  line-height: 2em;
+  
+} 
+  
+.encriptado p:nth-child(2){
+  padding-top: 1em;
+  font-weight: 800;
+  line-height: 29px;
+  letter-spacing: 0em;
+  padding-bottom: 5%;
+      
+}
+
+.informacion {
+  font-size: 18px;
+  color: rgba(73, 80, 87, 1); 
+  border-radius: 24px; 
+  
+}
+
+.informacion::before{
+  content: url("img/bi_exclamation-circle-fill-1.png");
+  margin-right: 5px;
+}
+
+.botonera{
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  height: 2em;
+  width:15vw;
+  border: 1px solid rgba(10, 56, 113,1);
+  border-radius: 24px;
+  cursor: pointer; 
+  margin-top: 1em;  
+    
+}
+
+.botonera2{
+  background-color: white;
+  position: relative;
+  top:68px;
+  
+}
+
+#btn-encriptar, #btn-copiar{
+  background: #0A3871;
+  color: white;
+  
+}
+
+#btn-desencriptar, #btn-limpiar{
+  background: rgba(216, 223, 232, 1);  
+  color: rgba(10, 56, 113,1);
+}
+
+#btn-copiar, #btn-limpiar{
+  width: 12vw;
+  margin-right: 1.5vw;
+  margin-left: 1.5vw;
+
+}
+#btn-desencriptar:disabled{
+  cursor: not-allowed;
+  
+}
+
+#sin-fondo{
+  background-image: none;
+  background-color: white;
+  padding: 2%;
+  border-radius: 24px;
+ 
+}
+
+#sin-fondo2{
+  background-image: none;
+  background-color: white;
+  padding: 2vw;
+  width: 86vw;
+  border-radius: 24px;
+  visibility: visible;
+  position: relative;
+  left: 0;
+   
+}
+#recarga{
+background-color: white;
+background-image: url(img/Muñeco.png);
+background-repeat: no-repeat;
+background-position: center;
+border: none;  
+border-color: white;
+border-top-left-radius: 24px;
+border-top-right-radius: 24px;
+}
+
+footer a {
+  display: inline;
+  position: relative;
+  top: -3em;
+  margin-left: 7em;
+  margin-right: 1em;
+  font-family:"Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(73, 80, 87, 1); 
+  text-decoration: none;
+  
+}
+
+footer a:hover{
+  color:silver;
+}
+
+footer  p {
+  display: inline;  
+  position: relative;
+  top:-0.5em;
+} 
+
+@media screen and (max-width:1024px) and (min-width: 431px){
+  .logo{
+    width:20%;
+    margin-top: 8%;
+  }
+  main {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .input{
+    display: block;
+    height: 100%;
+    
+  }
+
+  #text-area{
+    font-size: 28px;
+  }
+ 
+  .informacion{
+    font-size: medium;
+  }
+
+  .botonera {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+  }
+
+  button{
+    display: inline;
+    font-size: medium;
+    width: 40vw;
+    height: 4em;
+    
+  }
+   .encriptado {
+    visibility: hidden;
+    position: absolute;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 90vw;
+  }  
+
+  .text-area2{
+    position: absolute;
+  }
+  
+  .botonera2{
+    position: relative;
+    top: -2.5em;
+    visibility: visible;
+    margin: auto;
+    width: 90vw;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+             
+  }
+  #btn-copiar, #btn-limpiar{
+    display: inline;
+    width: 40vw;
+    margin: 0;
+        
+  }
+
+  #btn-copiar{
+    margin-right: 2vw;
+
+  }
+  #btn-limpiar{
+    margin-left: 2vw;
+  }
+
+  #parrafo :nth-child(1){
+    visibility: visible;
+    margin-top: 10px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    
+  }
+
+  #parrafo :nth-child(2){
+    visibility: visible;    
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+  
+  footer a {
+    position: relative;
+    top: 250px;
+    font-size: medium;
+    margin-bottom: 0;
+    
+  }
+
+  footer a:hover{
+    color:silver;
+  }
+
+}  
+
+
+@media screen and (max-width:430px){
+
+  .logo{
+    width:25%;
+    margin-top: 10%;
+    margin-left: 0.5%;
+  }
+
+  main {
+    display: block;
+    justify-content: center; 
+    
+  }
+  
+  .inputs{
+    display: block;
+    height: 100%;
+  }
+ 
+  .informacion{
+    font-size: medium;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    line-height: 1.2em;
+  }
+
+  .botonera{
+    display:block;
+    margin: auto;
+    justify-items: center;
+    margin-bottom: 15%;
+  }
+
+  #btn-encriptar, #btn-desencriptar {
+    display:block;
+    font-size: medium;
+    margin: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 80vw;
+    height: 3.5em;
+
+  } 
+  .encriptado {
+    visibility: hidden;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+  }
+
+  .text-area2 {
+    position: absolute;
+    
+  }
+ 
+  .botonera2{
+    visibility: visible;
+    display:block;
+    position: relative;
+    top:-120px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+
+  #btn-copiar, #btn-limpiar {
+    display:block;
+    font-size: medium;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 80vw;
+    height: 3.5em;
+
+  } 
+
+  #parrafo :nth-child(1){
+    margin: auto;
+    visibility: visible;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+
+  #parrafo :nth-child(2){
+    visibility: visible;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+  
+  footer  a {
+    font-size: small;
+    margin-bottom: 0%;
+  }
+
+  footer  p {
+    font-size: small;
+    margin-bottom: 0;
+  }
+
+  .contacto:hover{
+    font-size: medium;
+    color: silver;
+  }
+}  
+
